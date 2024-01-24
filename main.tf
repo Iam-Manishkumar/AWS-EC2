@@ -34,3 +34,12 @@ resource "aws_internet_gateway" "ig" {
   }
 }
 
+resource "aws_subnet" "subnet" {
+  vpc_id     = "${aws_vpc.vpc.id}"
+  cidr_block = "${var.subnet-cidr-block}"
+
+  tags = {
+    Name = "${var.subnet-tag-name}"
+  }
+}
+
