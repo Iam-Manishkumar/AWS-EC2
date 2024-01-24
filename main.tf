@@ -17,3 +17,12 @@ resource "aws_instance" "ec2dev" {
   }  
 }
 
+resource "aws_vpc" "vpc" {
+  cidr_block           = "${var.vpc-cidr-block}"
+  enable_dns_hostnames = true
+
+  tags = {
+    Name = "${var.vpc-tag-name}"
+  }
+}
+
