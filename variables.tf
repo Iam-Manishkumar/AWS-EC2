@@ -1,7 +1,7 @@
 variable "aws-region" {
   description = "The AWS region"
   type        = string
-  default     = "us-east-1"
+  default     = "eu-west-1"
 }
 
 /*variable "aws-profile" {
@@ -13,7 +13,7 @@ variable "aws-region" {
 variable "instance-ami" {
   description = "The AMI (Amazon Machine Image) that identifies the instance"
   type        = string
-  default     = "ami-035d8ae8de3734e5a"
+  default     = "ami-0a19dbe92f75d5320"
 }
 
 variable "instance-type" {
@@ -25,13 +25,13 @@ variable "instance-type" {
 variable "vpc_id" {
   description = "ID of the existing VPC"
   type        = string
-  default     = "vpc-042454a3394eb75d0"
+  default     = "vpc-00c38da1bd64f5f78"
 }
 
 variable "subnet_id" {
   description = "ID of the existing subnet"
   type        = string
-  default     = "subnet-0a16ed061532c0a75"
+  default     = "subnet-010cf1202660fcdb4"
 }
 
 variable "instance-key-name" {

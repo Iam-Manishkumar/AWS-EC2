@@ -1,7 +1,6 @@
 provider "aws" {
   region     = var.aws-region
-  access_key = "ABC"
-  secret_key = "ABC"
+  profile    = "AWS-Test"
 }
 
 resource "aws_instance" "ec2dev" {
